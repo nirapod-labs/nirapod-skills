@@ -1,0 +1,9 @@
+{
+  "name": "@nirapod-labs/skills",
+  "version": "0.1.0",
+  "description": "Nirapod Agent Skills Auto-Installer",
+  "private": true,
+  "bin": {
+    "nirapod-skills": "./install.js"
+  }
+}
