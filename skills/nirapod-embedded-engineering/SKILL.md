@@ -25,8 +25,8 @@ Read the full reference files when working on a specific domain:
 
 - `references/nasa-safety-rules.md` — NASA Power of 10 + JPL extensions (memory, control flow, concurrency)
 - `references/platform-crypto.md` — nRF52840 CC310, nRF5340 CC312, ESP32 hardware crypto rules
-- `references/doxygen-full.md` — Every Doxygen tag, Doxyfile config, grouping, and mainpage structure
-- `references/license-and-headers.md` — SPDX identifiers, file header templates for every file type
+- `write-documented-code/references/doxygen-full.md` — Every Doxygen tag, Doxyfile config, grouping, mainpage, advanced features (Mermaid, LaTeX, PlantUML, @snippet, ALIASES, TAG files, Fumadocs XML pipeline)
+- `write-documented-code/references/license-and-headers-cpp.md` — SPDX identifiers, file header templates for C/C++, CMake, Kconfig, Python, Markdown, Doxyfile
 - `references/write-like-human-tech.md` — Human-sounding prose rules for doc strings and comments
 
 ---

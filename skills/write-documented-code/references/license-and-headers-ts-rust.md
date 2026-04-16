@@ -33,6 +33,10 @@ go inside the file-level TSDoc block, at the bottom:
  *
  * SPDX-License-Identifier: APACHE-2.0
  * SPDX-FileCopyrightText: 2026 Nirapod Contributors
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License.
+ * 
  */
 ```
 

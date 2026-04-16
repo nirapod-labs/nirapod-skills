@@ -1,25 +1,27 @@
 ---
 name: write-documented-code
 description: >
-  Production-grade documentation standard for TypeScript (TSDoc/TypeDoc) and
-  Rust (rustdoc/cargo doc) code in the Nirapod project. Use this skill for ALL
-  TypeScript, JavaScript, and Rust code that needs documentation comments,
-  file headers, module-level docs, or full API reference generation. Triggers
-  on any request to write, review, refactor, document, or audit TS/JS/Rust code,
-  especially when the goal is generating a production documentation site with
-  zero warnings. Enforces TSDoc tag coverage, rustdoc standard sections,
+  Production-grade documentation standard for TypeScript (TSDoc/TypeDoc),
+  Rust (rustdoc/cargo doc), and C/C++ (Doxygen) code in the Nirapod project.
+  Use this skill for ALL TypeScript, JavaScript, Rust, and C/C++ code that
+  needs documentation comments, file headers, module-level docs, or full API
+  reference generation. Triggers on any request to write, review, refactor,
+  document, or audit TS/JS/Rust/C++ code, especially when the goal is
+  generating a production documentation site with zero warnings. Enforces
+  TSDoc tag coverage, rustdoc standard sections, Doxygen comment blocks,
   SPDX license headers, write-like-human prose, and full doc-comment coverage
   on every public symbol. Always use this skill when touching any file in
-  nirapod-wallet, nirapod-audit, or any Nirapod TypeScript or Rust repository.
-  Also use this skill when the user mentions "documentation", "doc comments",
-  "TSDoc", "TypeDoc", "rustdoc", "cargo doc", or asks for documented code in
-  TypeScript or Rust, even if they don't explicitly request a "skill".
+  nirapod-wallet, nirapod-audit, nirapod-crypto, or any Nirapod repository
+  where documentation comments are involved. Also use this skill when the user
+  mentions "documentation", "doc comments", "TSDoc", "TypeDoc", "rustdoc",
+  "cargo doc", "Doxygen", "@brief", "@param", or asks for documented code in
+  any language, even if they don't explicitly request a "skill".
 ---
 
-# Write-Documented-Code Standard — TypeScript & Rust
+# Write-Documented-Code Standard — TypeScript, Rust & C++ (Doxygen)
 
 This is the single authoritative documentation standard for all Nirapod
-TypeScript and Rust code. It mirrors the depth and rigor of the
+TypeScript, Rust, and C/C++ code. It mirrors the depth and rigor of the
 `nirapod-embedded-engineering` skill for C++/Doxygen, adapted for each
 language's idiomatic documentation tooling.
 
@@ -27,7 +29,10 @@ Read the full reference files when working on a specific domain:
 
 - `references/tsdoc-full.md` — Every TSDoc tag, TypeDoc config, file/class/function templates, ESLint integration
 - `references/rustdoc-full.md` — Rustdoc comment syntax, cargo doc config, standard sections, doctest patterns
-- `references/license-and-headers-ts-rust.md` — SPDX identifiers, file header templates for .ts, .tsx, .js, .rs, config files
+- `references/license-and-headers-ts-rust.md` — SPDX headers for .ts, .tsx, .js, .rs, config files
+- `references/doxygen-full.md` — Every Doxygen tag, Doxyfile config, grouping, and mainpage structure (C/C++)
+- `references/doxygen-advanced.md` — LaTeX math, PlantUML, Mermaid, @snippet, @xrefitem, ALIASES, TAG files, dark mode JS, @cite (C/C++)
+- `references/license-and-headers-cpp.md` — SPDX headers for .h, .hpp, .c, .cpp, CMakeLists.txt, Kconfig, Doxyfile
 
 ---
 
@@ -45,9 +50,16 @@ It covers `.cargo/config.toml` rustdocflags, crate-level `//!` docs, `///`
 comment conventions, the `# Panics` / `# Errors` / `# Safety` / `# Examples`
 section standard, doctests, and intra-doc linking.
 
-**License header questions?** → Read `references/license-and-headers-ts-rust.md`.
-It covers SPDX headers for `.ts`, `.tsx`, `.js`, `.rs`, `package.json`,
-`Cargo.toml`, `.yaml`, `.toml`, and Markdown files.
+**C or C++ firmware code?** → Read `references/doxygen-full.md` first, then
+`references/doxygen-advanced.md`. The first covers every Doxygen tag, the
+Doxyfile production configuration, and the group/module architecture. The
+second covers LaTeX math, PlantUML/Mermaid diagrams, @snippet for live
+examples, @xrefitem for custom cross-reference pages, ALIASES, TAG files
+for cross-project linking, and the dark-mode JS toggle.
+
+**License header questions (TypeScript / Rust)?** → Read `references/license-and-headers-ts-rust.md`.
+
+**License header questions (C / C++ / CMake / Kconfig)?** → Read `references/license-and-headers-cpp.md`.
 
 ---
 
