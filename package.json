@@ -1,6 +1,7 @@
 {
   "name": "@nirapod-labs/skills",
   "version": "0.1.0",
-  "description": "Nirapod Agent Skills",
+  "description": "Internal knowledge base for the Nirapod stack. Documented code patterns, embedded engineering practices, and team conventions in one place.",
+  "keywords": ["nirapod", "skills", "knowledge-base", "embedded", "documentation", "conventions", "agents"],
   "private": false
 }
